@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #eeeeee;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+hr {
+  border: 1px solid #3967d6;
+  margin-bottom: 2rem;
+}
+
+.container {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 7.5rem;
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
+  body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 60px 1fr;
+    gap: 20px;
+  }
+
+  .container {
+    padding: 0 2rem;
+  }
+
+  .header {
+    grid-column: 1;
+    padding: 0rem 2rem;
+  }
+
+  .sobre {
+    grid-column: 1;
+  }
+
+  .produtos {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+}
+
+@media (max-width: 640px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+}

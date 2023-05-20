@@ -1,0 +1,53 @@
+.header {
+  width: 100%;
+  background: #3967d6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.menu {
+  display: flex;
+  gap: 15px;
+}
+
+.menu a {
+  padding: 0 1rem;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
+  .header {
+    align-content: center;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  .menu a {
+    font-size: 0.625rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    align-self: center;
+  }
+
+  .logo {
+    font-size: .875rem;
+  }
+
+  .menu a {
+    font-size: 0.625rem;
+  }
+}

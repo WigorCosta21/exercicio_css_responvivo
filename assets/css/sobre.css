@@ -1,0 +1,37 @@
+.sobre {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 60px;
+  margin-top: 1rem;
+}
+
+.sobre-titulo {
+  color: #3967d6;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
+
+  .sobre {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+
+  .sobre-titulo {
+    margin-top: 1.5rem;
+  }
+
+}
+
+
+@media (max-width: 640px) {
+  .sobre {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+
+  .sobre-titulo {
+    margin-top: 1.5rem;
+  }
+
+}
